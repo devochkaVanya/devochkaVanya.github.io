@@ -1,0 +1,300 @@
+body {
+    background-image: url(../img/sandpaper.png);
+    background-repeat: repeat;
+}
+
+.conteiner {
+    width: 100%;
+    height: 600px;
+    /*background-color: red;*/
+    margin-top: 30px;
+    position: relative;
+}
+
+.steps {
+    width: 850px;
+    margin: auto;
+}
+
+.st i {
+    width: 40px;
+    height: 40px;
+    /*color: #9C9C9C;*/
+    color: #E8E8E8;
+    position: absolute;
+    top: calc(50% - 20px);
+    right: calc(50% - 20px);
+    font-size: 30px;
+}
+
+.st:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.st i:hover {
+    color: #9C9C9C;
+    /*color: #E8E8E8;*/
+}
+
+.st i:focus {
+    color: red;
+}
+
+.step1,
+.step2,
+.step3,
+.step4,
+.step5,
+.step6 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(79, 79, 79, 0.6);
+    box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #000000;
+    display: inline-block;
+    margin-right: 30px;
+    transition: transform 0.4s;
+}
+
+label:first-of-type {
+    margin-left: 35px;
+}
+
+input[name=step]+div {
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+input[name=step][type=radio]:checked+div {
+    opacity: 1;
+}
+
+input[name=step] {
+    display: none;
+}
+
+.step_info {
+    background-image: url(../img/cork-wallet.png);
+    background-repeat: repeat;
+    box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    height: 340px;
+    position: absolute;
+    top: 170px;
+    left: calc(50% - 350px);
+    border: 1px solid #000000;
+    font-family: PoiretOne-Regular;
+    font-weight: bold;
+    padding: 20px;
+}
+
+p.welcome {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.six {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 400px);
+    /*background-color: #4682B4;*/
+    padding: 0px;
+}
+
+.six img {
+    width: 800px;
+    height: 400px;
+}
+
+.footer3 {
+    width: 100%;
+    height: 30px;
+    background-color: #363636;
+    text-align: center;
+    color: #E8E8E8;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* МЕДИАЗАПРОСЫ*/
+
+@media screen and (max-width: 1000px) {
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5,
+    .step6 {
+        width: 85px;
+        height: 85px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgba(79, 79, 79, 0.7);
+        box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.5);
+        border: 1px solid #000000;
+        display: inline-block;
+        margin-right: 35px;
+    }
+    .steps {
+        width: 800px;
+        margin: auto;
+    }
+    p.welcome {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5,
+    .step6 {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgba(79, 79, 79, 0.7);
+        box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.5);
+        border: 1px solid #000000;
+        display: inline-block;
+        margin-right: 35px;
+    }
+    .steps {
+        width: 700px;
+        margin: auto;
+    }
+    .step_info {
+        background-image: url(../img/cork-wallet.png);
+        background-repeat: repeat;
+        box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.5);
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 120px;
+        left: calc(50% - 250px);
+        border: 1px solid #000000;
+        font-family: PoiretOne-Regular;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .conteiner {
+        height: 700px;
+    }
+    .six {
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 150px;
+        left: calc(50% - 300px);
+        padding: 0;
+    }
+    .six img {
+        width: 600px;
+        height: 300px;
+        
+        
+    }
+    p.welcome {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5,
+    .step6 {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        text-align: center;
+        background-color: rgba(79, 79, 79, 0.7);
+        box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.5);
+        border: 1px solid #000000;
+        display: inline-block;
+        margin-right: 35px;
+    }
+    .steps {
+        width: 100%;
+        margin: auto;
+    }
+    .st i {
+        width: 30px;
+        height: 30px;
+        /*color: #9C9C9C;*/
+        color: #E8E8E8;
+        position: absolute;
+        top: calc(50% - 15px);
+        right: calc(50% - 15px);
+        font-size: 30px;
+    }
+    p.welcome {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5,
+    .step6 {
+        display: block;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    label:first-of-type {
+        margin-left: 5px;
+    }
+    .step_info {
+        background-image: url(../img/cork-wallet.png);
+        background-repeat: repeat;
+        box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.5);
+        width: 250px;
+        height: 950px;
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 120px);
+        border: 1px solid #000000;
+        font-family: PoiretOne-Regular;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .conteiner {
+        height: 1000px;
+    }
+    .six {
+        width: 200px;
+        height: 100px;
+    }
+    .six img {
+        display: none;
+    }
+    p.welcome {
+        display: block;
+        font-size: 30px;
+    }
+    
+   
+}
+
+/*@media screen and (max-width: 320px) {*/
+/*    body{*/
+/*        width: 320px;*/
+/*    }*/
+/*}*/

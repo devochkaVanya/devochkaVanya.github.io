@@ -1,0 +1,45 @@
+body {
+    background-image: url(../img/sandpaper.png);
+    background-repeat: repeat;
+}
+
+.footer4 {
+    width: 100%;
+    height: 30px;
+    background-color: #363636;
+    text-align: center;
+    color: #E8E8E8;
+    padding-top: 10px;
+    /*clear: both;*/
+    /*margin-top: 100px;*/
+    position: absolute;
+    bottom: 0;
+}
+
+h1,h2{
+    text-align: center;
+    font-family: PoiretOne-Regular;
+    font-weight: bold;
+    
+}
+img.plain,.apartments{
+    width: 300px;
+    height: 200px;
+    float: left;
+    border:2px solid;
+    margin-left: 10px;
+}
+
+p{
+    font-family: PoiretOne-Regular;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr{
+    width: 700px;
+    
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
